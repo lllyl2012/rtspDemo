@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<canvas id="video"></canvas>
+	<script type="text/javascript" src="jsmpeg.min.js"></script>
+	<script type="text/javascript">
+		var canvas = document.getElementById('video');
+		var url = 'ws://127.0.0.1:8081/aa';
+		var player = new JSMpeg.Player(url, {canvas: canvas});
+	</script>
+</body>
+</html>
